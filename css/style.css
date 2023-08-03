@@ -1,0 +1,151 @@
+* {
+      margin: 0px;
+      padding: 0px;
+}
+
+.jumbotron {
+      background: url('/lp-umrah/img/bg.jpg');
+      background-size: cover;
+      height: 100vh !important;
+
+
+
+}
+
+.jumbotron::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      /* Ubah nilai alpha sesuai keinginan */
+}
+
+
+/* Tambahkan gaya untuk tombol Explore */
+.btn-explore {
+      position: relative;
+      z-index: 1;
+      font-size: 15px;
+      width: 110px;
+      transition: 0.5s;
+      background-color: #FD8D14;
+      /* Agar tombol berada di atas lapisan gelap */
+}
+
+.btn-explore:hover {
+      background-color: #FD8D14;
+      filter: drop-shadow(5px 5px 51px rgb(179, 255, 0));
+
+}
+
+.btn-explore::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* Ubah nilai alpha sesuai keinginan */
+      z-index: -1;
+      /* Lapisan gelap berada di bawah tombol */
+      border-radius: 0.25rem;
+      /* Atur radius sesuai keinginan */
+}
+
+.btn-ex {
+      width: 200px;
+}
+
+.down-size {
+      padding-top: 20rem;
+      filter: drop-shadow(10px 5px 15px black);
+      color: #d4d956;
+}
+
+.text-down {
+      margin-top: 15rem;
+}
+
+.shadows-txt {
+      filter: drop-shadow(10px 5px 15px black);
+}
+
+
+
+/* Set ukuran foto partner */
+.partner-container {
+      display: flex;
+      /* Membuat elemen sejajar */
+      justify-content: center;
+      /* Mengatur jarak antara elemen sejajar */
+      align-items: center;
+      /* Mengatur foto berada di tengah vertikal */
+}
+
+.partner-container img {
+      width: 200px;
+
+
+}
+
+.kabah-shadow {
+      filter: drop-shadow(10px 50px 100px black);
+}
+
+.text-costume-white-ghost {
+      color: #dddddd;
+}
+
+.bg-his {
+      background-color: #FFE17B;
+      height: 30vh;
+}
+
+.card-img {
+      width: 100%;
+      height: 200px;
+      /* Sesuaikan dengan tinggi gambar yang Anda inginkan */
+      object-fit: cover;
+      /* Atur agar gambar mencakup seluruh area card tanpa mengubah proporsi aspeknya */
+}
+
+.news {
+      margin-top: 30rem;
+      height: 70vh;
+}
+
+section {
+      padding-top: 2rem;
+}
+
+@media screen and (max-width:476px) {
+
+      /* Set ukuran foto partner */
+      .partner-container {
+            display: flex;
+            /* Membuat elemen sejajar */
+            justify-content: center;
+            /* Mengatur jarak antara elemen sejajar */
+            align-items: center;
+            /* Mengatur foto berada di tengah vertikal */
+      }
+
+      .partner-container img {
+            width: 45px;
+            margin-left: 2px;
+
+
+      }
+
+      .bg-his {
+            height: 100vh;
+      }
+
+      .tik {
+            margin-top: 50vh;
+      }
+}
